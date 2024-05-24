@@ -1,0 +1,24 @@
+{% import "../icons.njk" as icons %}
+
+{% macro card(image, color) %}
+<div class="goods__good good good_{{color}}">
+	<img src="#img/{{image}}" alt="" class="good__image">
+	<a href="#" class="good__plus">
+		{{icons.plus('good__svg')}}
+	</a>
+</div>
+{% endmacro %}
+
+<div class="goods">
+	<div class="goods__container">
+		<span class="goods__label text text_variation_label">{{icons.apple('goods__icon')}} Watch</span>
+		<h2 class="goods__title">Our Available Product</h2>
+		<p class="goods__description">Watch is such a desired fashion accessory and is seen as a necessary cupboard piece
+			for both men and women. Wristwatches are generally.</p>
+		<div class="goods__cards">
+			{{card('home/watch-1.png', 'red')}}
+			{{card('home/watch-2.png', 'gray')}}
+			{{card('home/watch-3.png', 'brown')}}
+		</div>
+	</div>
+</div>

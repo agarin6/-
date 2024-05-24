@@ -1,0 +1,26 @@
+.text_variation_label {
+	color: $accent;
+	font-size: rem(12);
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.text_variation_body1 {
+	line-height: 150%;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	line-height: 120%;
+	text-transform: capitalize;
+}
+
+h1 {
+	@include adaptive-value('font-size', 67, 36);
+}
+
+h2 {
+	@include adaptive-value('font-size', 50, 30);
+}

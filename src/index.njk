@@ -1,0 +1,24 @@
+{% set title = '#project_name' %}
+
+<!-- Page made by fb24m -->
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'html/head.njk' %}
+
+<body>
+  <div class="wrapper">
+    {% include 'html/header.njk' %}
+    <main class="main">
+      {% include "html/home/welcome.njk" %}
+      {% include "html/home/feature.njk" %}
+      {% include "html/home/goods.njk" %}
+      {% include "html/home/video.njk" %}
+      {% include "html/home/reviews.njk" %}
+    </main>
+    {% include 'html/footer.njk' %}
+    {% include 'html/popups.njk' %}
+  </div>
+  {% include 'html/js.njk' %}
+</body>
+
+</html>

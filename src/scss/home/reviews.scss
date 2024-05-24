@@ -1,0 +1,88 @@
+.reviews {
+	&__container {}
+
+	&__review {}
+}
+
+.review {
+	border-radius: 10px;
+	background: #F4F4F4;
+	max-width: 700px;
+	position: relative;
+
+	@include adaptive-value('padding-top', 48, 26, 660, 375);
+	@include adaptive-value('padding-bottom', 48, 26, 660, 375);
+	@include adaptive-value('padding-left', 64, 26, 660, 375);
+	@include adaptive-value('padding-right', 64, 26, 660, 375);
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		z-index: -1;
+		top: -12px;
+		left: -12px;
+		width: 100%;
+		height: 100%;
+
+		display: inline-block;
+
+		border: #D3CFCF 2px dotted;
+		border-radius: 10px;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		@media (max-width: 660px) {
+			justify-content: flex-end;
+			width: 100%;
+		}
+	}
+
+	&__quote {
+		fill: #dcdcdc;
+
+
+	}
+
+	&__wrapper {
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+
+		@media (max-width: 660px) {
+			position: absolute;
+			bottom: 140px;
+			right: 70px;
+		}
+	}
+
+	&__info {}
+
+	&__name {
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: 700;
+		line-height: 160%;
+	}
+
+	&__title {
+		font-family: 'PT Sans Narrow', sans-serif;
+		opacity: 0.7;
+		font-size: rem(14);
+		line-height: 160%;
+	}
+
+	&__avatar {
+		flex-basis: 70px;
+		flex-shrink: 0;
+	}
+}
