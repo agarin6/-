@@ -8,7 +8,6 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<script src="script.js" defer></script>
-	<script src="traslate.js" defer></script>
 </head>
 
 <body>
@@ -18,45 +17,33 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link" data-translate="home">Home</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-translate="feature">Feature</a>
-							</li>
-							<li class="menu__item"><a href="#" class="menu__link" data-translate="product">Product</a>
-							</li>
-							<li class="menu__item"><a href="#" class="menu__link"
-									data-translate="testimonial">Testimonial</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-translate-key="home">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-translate-key="feature">Feature</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-translate-key="product">Product</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-translate-key="testimonial">Testimonial</a></li>
 						</ul>
 					</nav>
 				</div>
-				<a href="#" class="menu__button button button_color_accent" data-translate="get_started">GET STARTED</a>
+				<a href="#" class="menu__button button button_color_accent" data-translate-key="get_started">GET STARTED</a>
 				<div class="header__icon" data-open-block="menu"><span></span></div>
-				<button id="dark-mode-toggle" class="button button_color_accent"
-					data-translate="toggle_dark_mode">Toggle Dark Mode</button>
-				<button id="audio-play-toggle" class="button button_color_accent" data-translate="play_audio">Play
-					Audio</button>
-				<button id="translate-toggle" class="button button_color_accent"
-					data-translate="translate">Translate</button>
+				<button id="dark-mode-toggle" class="button button_color_accent" data-translate-key="toggle_dark_mode">Toggle Dark Mode</button>
+				<button id="audio-play-toggle" class="button button_color_accent" data-translate-key="play_audio">Play Audio</button>
+				<div class="language-switcher">
+					<button onclick="setLanguage('en')">English</button>
+					<button onclick="setLanguage('ru')">Русский</button>
+				</div>
 			</div>
 		</header>
 		<main class="main">
 			<div class="welcome">
 				<div class="welcome__container">
 					<div class="welcome__block">
-						<span class="welcome__label text text_variation_label"
-							data-translate="your_watch_your_style">your watch your style</span>
-						<h1 class="welcome__title" data-translate="have_you_ever_worn_a_real_watch">Have You Ever Worn A
-							Real Watch.</h1>
-						<p class="welcome__description text text_variation_body1"
-							data-da=".welcome__block_last,768,last" data-translate="welcome_description">The styles of
-							watches available to consumers are endless and profit also endless. if you are Fashion Geek
-							and have guts to sort out need related to </p>
+						<span class="welcome__label text text_variation_label" data-translate-key="your_watch_your_style">your watch your style</span>
+						<h1 class="welcome__title" data-translate-key="have_you_ever_worn_a_real_watch">Have You Ever Worn A Real Watch.</h1>
+						<p class="welcome__description text text_variation_body1" data-da=".welcome__block_last,768,last" data-translate-key="welcome_description">The styles of watches available to consumers are endless and profit also endless. if you are Fashion Geek and have guts to sort out need related to</p>
 						<div class="welcome__buttons" data-da=".welcome__block_last,768,last">
-							<a href="#" class="welcome__button button button_color_accent"
-								data-translate="get_started_btn">GET STATED</a>
-							<a href="#" class="welcome__button button button_border_purple" data-translate="gallery">
-								
-								Gallery
-							</a>
+							<a href="#" class="welcome__button button button_color_accent" data-translate-key="get_started_btn">GET STARTED</a>
+							<a href="#" class="welcome__button button button_border_purple" data-translate-key="gallery">Gallery</a>
 						</div>
 					</div>
 					<div class="welcome__block welcome__block_last">
@@ -67,74 +54,50 @@
 
 			<div class="feature">
 				<div class="feature__container">
-					<h2 class="feature__title" data-translate="our_service_feature">our service Feature</h2>
-					<p class="feature__description text text_variation_body1" data-translate="feature_description">
-						Watch companies are now focusing more on trendy watches which targets the youngsters who always.
-					</p>
+					<h2 class="feature__title" data-translate-key="our_service_feature">our service Feature</h2>
+					<p class="feature__description text text_variation_body1" data-translate-key="feature_description">Watch companies are now focusing more on trendy watches which targets the youngsters who always.</p>
 					<div class="feature__columns">
 						<div class="feature__column">
 
 							<div class="feature__card feature-card">
-								<div class="feature-card__icon">
-									
-
-								</div>
-								<span class="feature-card__title" data-translate="android_version">android
-									version</span>
-								<p class="feature-card__description text text_variation_body1"
-									data-translate="android_version_desc">Android officially 10.0
-								</p>
+								<div class="feature-card__icon"></div>
+								<span class="feature-card__title" data-translate-key="android_version">android version</span>
+								<p class="feature-card__description text text_variation_body1" data-translate-key="android_version_description">Android officially 10.0</p>
 							</div>
 
 							<div class="feature__card feature-card">
-								
-								<span class="feature-card__title" data-translate="internet_service">internet
-									Service</span>
-								<p class="feature-card__description text text_variation_body1"
-									data-translate="internet_service_desc">4G Smart Watches</p>
+								<span class="feature-card__title" data-translate-key="internet_service">internet Service</span>
+								<p class="feature-card__description text text_variation_body1" data-translate-key="internet_service_description">4G Smart Watches</p>
 							</div>
 
 							<div class="feature__card feature-card">
-								<div class="feature-card__icon">
-									
-								</div>
-								<span class="feature-card__title" data-translate="music_player">music player</span>
-								<p class="feature-card__description text text_variation_body1"
-									data-translate="music_player_desc">Use the Music app</p>
+								<div class="feature-card__icon"></div>
+								<span class="feature-card__title" data-translate-key="music_player">music player</span>
+								<p class="feature-card__description text text_variation_body1" data-translate-key="music_player_description">Use the Music app</p>
 							</div>
 
 						</div>
 						<div class="feature__column feature__column_wide">
-							<img src="img/home/feature.webp" alt="Не удалось загрузить изображение"
-								class="feature__image" data-translate="feature_image">
+							<img src="img/home/feature.webp" alt="Не удалось загрузить изображение" class="feature__image">
 						</div>
 						<div class="feature__column">
 
 							<div class="feature__card feature-card">
-								<div class="feature-card__icon">
-									
-								</div>
-								<span class="feature-card__title" data-translate="battery">Battery</span>
-								<p class="feature-card__description text text_variation_body1"
-									data-translate="battery_desc">battery life is 18 hours</p>
+								<div class="feature-card__icon"></div>
+								<span class="feature-card__title" data-translate-key="battery">Battery</span>
+								<p class="feature-card__description text text_variation_body1" data-translate-key="battery_description">battery life is 18 hours</p>
 							</div>
 
 							<div class="feature__card feature-card">
-								<div class="feature-card__icon">
-									
-								</div>
-								<span class="feature-card__title" data-translate="settings">settings</span>
-								<p class="feature-card__description text text_variation_body1"
-									data-translate="settings_desc">Choose your settings</p>
+								<div class="feature-card__icon"></div>
+								<span class="feature-card__title" data-translate-key="settings">settings</span>
+								<p class="feature-card__description text text_variation_body1" data-translate-key="settings_description">Choose your settings</p>
 							</div>
 
 							<div class="feature__card feature-card">
-								<div class="feature-card__icon">
-									
-								</div>
-								<span class="feature-card__title" data-translate="messages">messages</span>
-								<p class="feature-card__description text text_variation_body1"
-									data-translate="messages_desc">Open the Messages app</p>
+								<div class="feature-card__icon"></div>
+								<span class="feature-card__title" data-translate-key="messages">messages</span>
+								<p class="feature-card__description text text_variation_body1" data-translate-key="messages_description">Open the Messages app</p>
 							</div>
 
 						</div>
@@ -144,40 +107,24 @@
 
 			<div class="goods">
 				<div class="goods__container">
-					<span class="goods__label text text_variation_label" data-translate="watch_label">
-						
-						Watch</span>
-					<h2 class="goods__title" data-translate="available_products">Our Available Product</h2>
-					<p class="goods__description" data-translate="available_products_desc">Watch is such a desired
-						fashion accessory and is seen as a necessary
-						cupboard piece
-						for both men and women. Wristwatches are generally.</p>
+					<span class="goods__label text text_variation_label" data-translate-key="watch">Watch</span>
+					<h2 class="goods__title" data-translate-key="our_available_product">Our Available Product</h2>
+					<p class="goods__description" data-translate-key="product_description">Watch is such a desired fashion accessory and is seen as a necessary cupboard piece for both men and women. Wristwatches are generally.</p>
 					<div class="goods__cards">
 
 						<div class="goods__good good good_red">
 							<img src="img/home/watch-1.webp" alt="Не удалось загрузить изображение" class="good__image">
-							<a href="#" class="good__plus">
-
-								
-
-							</a>
+							<a href="#" class="good__plus"></a>
 						</div>
 
 						<div class="goods__good good good_gray">
 							<img src="img/home/watch-2.webp" alt="Не удалось загрузить изображение" class="good__image">
-							<a href="#" class="good__plus">
-
-								
-							</a>
+							<a href="#" class="good__plus"></a>
 						</div>
 
 						<div class="goods__good good good_brown">
 							<img src="img/home/watch-3.webp" alt="Не удалось загрузить изображение" class="good__image">
-							<a href="#" class="good__plus">
-
-								
-
-							</a>
+							<a href="#" class="good__plus"></a>
 						</div>
 
 					</div>
@@ -186,43 +133,26 @@
 			<div class="video">
 				<div class="video__container">
 					<div class="video__block">
-						<img src="img/home/video.webp" alt="Не удалось загрузить изображение" class="video__image"
-							data-translate="video_image">
+						<img src="img/home/video.webp" alt="Не удалось загрузить изображение" class="video__image">
 					</div>
 					<div class="video__block">
-						<h2 class="video__title" data-translate="best_watch">The best watch for your best time.</h2>
-						<p class="video__description text text_variation_body1" data-translate="best_watch_desc">Since
-							the watch is such a popular
-							Fashion accessory and is
-							seen as an essential wardrobe piece for both men and women.</p>
-						<a href="#" class="video__button button button_border_gray" data-translate="play_video">
-							
-							Play Video</a>
+						<h2 class="video__title" data-translate-key="the_best_watch_for_your_best_time">The best watch for your best time.</h2>
+						<p class="video__description text text_variation_body1" data-translate-key="video_description">Since the watch is such a popular Fashion accessory and is seen as an essential wardrobe piece for both men and women.</p>
+						<a href="#" class="video__button button button_border_gray" data-translate-key="play_video">Play Video</a>
 					</div>
 				</div>
 			</div>
 			<div class="reviews">
 				<div class="reviews__container">
 					<div class="reviews__review review">
-						<p class="review__text text text_variation_body1" data-translate="review_text">
-							For example, if someone lives in adverse conditions then they use the slogan accuracy under
-							adverse conditions
-							to show them their watch can fulfill their needs. Similarly, if someone likes handmade
-							products then they use
-							the slogan Handmade.
-						</p>
+						<p class="review__text text text_variation_body1" data-translate-key="review_text">For example, if someone lives in adverse conditions then they use the slogan accuracy under adverse conditions to show them their watch can fulfill their needs. Similarly, if someone likes handmade products then they use the slogan Handmade.</p>
 						<div class="review__user">
 							<div class="review__info">
-								<span class="review__name" data-translate="review_name">Ronald Richards</span>
-								<div class="review__title" data-translate="review_title">D.M Richards</div>
+								<span class="review__name" data-translate-key="ronald_richards">Ronald Richards</span>
+								<div class="review__title" data-translate-key="d_m_richards">D.M Richards</div>
 							</div>
-							<img src="img/home/avatar.webp" alt="Не удалось загрузить изображение"
-								class="review__avatar" data-translate="review_avatar">
-							<div class="review__wrapper">
-
-								
-
-							</div>
+							<img src="img/home/avatar.webp" alt="Не удалось загрузить изображение" class="review__avatar">
+							<div class="review__wrapper"></div>
 						</div>
 					</div>
 				</div>
@@ -233,69 +163,51 @@
 				<div class="footer__columns">
 					<div class="footer__column" id="footer-info">
 						<div class="footer__info">
-							<div class="footer__logo" data-translate="footer_logo">LOGO</div>
-							<p class="footer__description" data-translate="footer_description">Apple Watch and the app
-								on iPhone</p>
+							<div class="footer__logo" data-translate-key="footer_logo">LOGO</div>
+							<p class="footer__description" data-translate-key="footer_description">Apple Watch and the app on iPhone</p>
 						</div>
 						<ul class="footer__social-list" data-da=".footer__container,620,last">
 							<li class="footer__social-item">
-								<a href="#" class="footer__social-link" data-translate="footer_facebook">
-									
-								</a>
+								<a href="#" class="footer__social-link" data-translate-key="footer_facebook"></a>
 							</li>
 							<li class="footer__social-item">
-								<a href="#" class="footer__social-link" data-translate="footer_instagram">
-									
-
-								</a>
+								<a href="#" class="footer__social-link" data-translate-key="footer_instagram"></a>
 							</li>
 							<li class="footer__social-item">
-								<a href="#" class="footer__social-link" data-translate="footer_twitter">
-									
-								</a>
+								<a href="#" class="footer__social-link" data-translate-key="footer_twitter"></a>
 							</li>
 						</ul>
 					</div>
 					<div class="footer__column">
 						<ul class="footer__list">
-							<li class="footer__item" data-translate="product">Product</li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="about_us">About
-									Us</a></li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="blog">Blog</a>
-							</li>
+							<li class="footer__item" data-translate-key="product">Product</li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="about_us">About Us</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="blog">Blog</a></li>
 						</ul>
 					</div>
 					<div class="footer__column">
 						<ul class="footer__list">
-							<li class="footer__item" data-translate="features">Features</li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="smart_watch">Smart
-									Watch</a></li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="head_phone">Head
-									Phone</a></li>
-							<li class="footer__item"><a href="#" class="footer__link"
-									data-translate="home_security">Home security</a></li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="smart_lock">Smart
-									Lock</a></li>
+							<li class="footer__item" data-translate-key="features">Features</li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="smart_watch">Smart Watch</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="head_phone">Head Phone</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="home_security">Home security</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="smart_lock">Smart Lock</a></li>
 						</ul>
 					</div>
 					<div class="footer__column">
 						<ul class="footer__list">
-							<li class="footer__item" data-translate="about_us2">About Us</li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="who_we_are">Who we
-									are</a></li>
-							<li class="footer__item"><a href="#" class="footer__link"
-									data-translate="contact_us">Contact us</a></li>
-							<li class="footer__item"><a href="#" class="footer__link"
-									data-translate="support">Support</a></li>
-							<li class="footer__item"><a href="#" class="footer__link" data-translate="faq">FAQ</a></li>
+							<li class="footer__item" data-translate-key="about_us2">About Us</li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="who_we_are">Who we are</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="contact_us">Contact us</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="support">Support</a></li>
+							<li class="footer__item"><a href="#" class="footer__link" data-translate-key="faq">FAQ</a></li>
 						</ul>
 					</div>
 					<div class="footer__column">
 						<ul class="footer__list" data-da="#footer-info,768,last">
-							<li class="footer__item" data-translate="subscribe">Subscribe</li>
+							<li class="footer__item" data-translate-key="subscribe">Subscribe</li>
 							<li class="footer__item">
-								<input type="text" placeholder="Add Email" id="email" name="email" autocomplete="email"
-									class="footer__input input input_text" data-translate="add_email">
+								<input type="text" placeholder="Add Email" id="email" name="email" autocomplete="email" class="footer__input input input_text" data-translate-key="add_email">
 							</li>
 						</ul>
 					</div>
@@ -307,14 +219,142 @@
 				<div class="popup__window">
 					<div class="popup__content">
 						<button class="popup__close" data-popup-toggle="back-call"></button>
-
 					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
-	<script src="js/app.js"></script>
+	<script>
+		const translations = {
+			en: {
+				home: "Home",
+				feature: "Feature",
+				product: "Product",
+				testimonial: "Testimonial",
+				get_started: "GET STARTED",
+				your_watch_your_style: "your watch your style",
+				have_you_ever_worn_a_real_watch: "Have You Ever Worn A Real Watch.",
+				welcome_description: "The styles of watches available to consumers are endless and profit also endless. if you are Fashion Geek and have guts to sort out need related to",
+				get_started_btn: "GET STARTED",
+				gallery: "Gallery",
+				our_service_feature: "our service Feature",
+				feature_description: "Watch companies are now focusing more on trendy watches which targets the youngsters who always.",
+				android_version: "android version",
+				android_version_description: "Android officially 10.0",
+				internet_service: "internet Service",
+				internet_service_description: "4G Smart Watches",
+				music_player: "music player",
+				music_player_description: "Use the Music app",
+				battery: "Battery",
+				battery_description: "battery life is 18 hours",
+				settings: "settings",
+				settings_description: "Choose your settings",
+				messages: "messages",
+				messages_description: "Open the Messages app",
+				watch: "Watch",
+				our_available_product: "Our Available Product",
+				product_description: "Watch is such a desired fashion accessory and is seen as a necessary cupboard piece for both men and women. Wristwatches are generally.",
+				the_best_watch_for_your_best_time: "The best watch for your best time.",
+				video_description: "Since the watch is such a popular Fashion accessory and is seen as an essential wardrobe piece for both men and women.",
+				play_video: "Play Video",
+				review_text: "For example, if someone lives in adverse conditions then they use the slogan accuracy under adverse conditions to show them their watch can fulfill their needs. Similarly, if someone likes handmade products then they use the slogan Handmade.",
+				ronald_richards: "Ronald Richards",
+				d_m_richards: "D.M Richards",
+				subscribe: "Subscribe",
+				add_email: "Add Email",
+				toggle_dark_mode: "Toggle Dark Mode",
+				play_audio: "Play Audio",
+				footer_logo: "LOGO",
+				footer_description: "Apple Watch and the app on iPhone",
+				footer_facebook: "Facebook",
+				footer_instagram: "Instagram",
+				footer_twitter: "Twitter",
+				about_us: "About Us",
+				blog: "Blog",
+				features: "Features",
+				smart_watch: "Smart Watch",
+				head_phone: "Head Phone",
+				home_security: "Home security",
+				smart_lock: "Smart Lock",
+				about_us2: "About Us",
+				who_we_are: "Who we are",
+				contact_us: "Contact us",
+				support: "Support",
+				faq: "FAQ"
+			},
+			ru: {
+				home: "Главная",
+				feature: "Особенности",
+				product: "Продукты",
+				testimonial: "Отзывы",
+				get_started: "НАЧАТЬ",
+				your_watch_your_style: "ваши часы ваш стиль",
+				have_you_ever_worn_a_real_watch: "Вы когда-нибудь носили настоящие часы?",
+				welcome_description: "Стилей часов, доступных для потребителей, бесконечное множество, а прибыль тоже бесконечна. если вы модник и у вас есть смелость разобраться в потребностях, связанных с",
+				get_started_btn: "НАЧАТЬ",
+				gallery: "Галерея",
+				our_service_feature: "наши особенности сервиса",
+				feature_description: "Сейчас компании, производящие часы, все больше ориентируются на модные часы, которые нацелены на молодежь, которая всегда.",
+				android_version: "android версия",
+				android_version_description: "Android официально 10.0",
+				internet_service: "интернет сервис",
+				internet_service_description: "4G Смарт Часы",
+				music_player: "музыкальный плеер",
+				music_player_description: "Используйте приложение Music",
+				battery: "Батарея",
+				battery_description: "время работы батареи 18 часов",
+				settings: "настройки",
+				settings_description: "Выберите ваши настройки",
+				messages: "сообщения",
+				messages_description: "Открыть приложение Сообщения",
+				watch: "Часы",
+				our_available_product: "Наш доступный продукт",
+				product_description: "Часы - это такой желанный модный аксессуар и считается необходимым предметом гардероба как для мужчин, так и для женщин. Наручные часы в основном.",
+				the_best_watch_for_your_best_time: "Лучшие часы для вашего лучшего времени.",
+				video_description: "Поскольку часы являются таким популярным модным аксессуаром и считаются важным элементом гардероба как для мужчин, так и для женщин.",
+				play_video: "Смотреть видео",
+				review_text: "Например, если кто-то живет в неблагоприятных условиях, то они используют лозунг точность в неблагоприятных условиях, чтобы показать, что их часы могут удовлетворить их потребности. Точно так же, если кто-то любит изделия ручной работы, они используют лозунг Ручная работа.",
+				ronald_richards: "Рональд Ричардс",
+				d_m_richards: "Д.М Ричардс",
+				subscribe: "Подписаться",
+				add_email: "Добавить Email",
+				toggle_dark_mode: "Переключить темный режим",
+				play_audio: "Проиграть аудио",
+				footer_logo: "ЛОГОТИП",
+				footer_description: "Apple Watch и приложение на iPhone",
+				footer_facebook: "Фейсбук",
+				footer_instagram: "Инстаграм",
+				footer_twitter: "Твиттер",
+				about_us: "О нас",
+				blog: "Блог",
+				features: "Особенности",
+				smart_watch: "Умные часы",
+				head_phone: "Наушники",
+				home_security: "Домашняя безопасность",
+				smart_lock: "Умный замок",
+				about_us2: "О нас",
+				who_we_are: "Кто мы",
+				contact_us: "Свяжитесь с нами",
+				support: "Поддержка",
+				faq: "FAQ"
+			}
+		};
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const savedLanguage = localStorage.getItem('language') || 'en';
+			setLanguage(savedLanguage);
+		});
+
+		function setLanguage(language) {
+			const elements = document.querySelectorAll('[data-translate-key]');
+			elements.forEach(element => {
+				const key = element.getAttribute('data-translate-key');
+				element.innerHTML = translations[language][key];
+			});
+			localStorage.setItem('language', language);
+		}
+	</script>
 </body>
 
 </html>
