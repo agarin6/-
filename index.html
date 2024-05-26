@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <input type="text" id="search-input" placeholder="Search characters..." autocomplete="off">
+        <select id="gender-select">
+            <option value="all">All</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+        </select>
+    </header>
+    <main>
+        <div id="characters-container"></div>
+        <button id="load-more">Load more</button>
+    </main>
+    <footer>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <span>2024</span>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
